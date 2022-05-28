@@ -1,0 +1,155 @@
+:root {
+    --primary-text-color: #757575;
+    --primary-white-color: #ffffff;
+    --title-text-color: #212121;
+    --accent-color: #2196f3;
+    --primary-bg-color: #F5F4FA;
+  }
+  
+  body {
+    color: var(--primary-text-color);
+    background-color: #ffffff;
+  }
+  ul {
+      list-style: none;
+  }
+  
+  
+  /* Навигация */
+  nav {
+    color: var(--title-text-color);
+  }
+  
+  .nav-link.current {
+  color: var(--accent-color);
+  }
+  
+  .nav-logo {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+  }
+  
+  .nav-logo .logo {
+    color: var(--accent-color);
+  }
+  
+  .nav-link {
+    color: var(--primary-text-color);
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    list-style: none;
+  }
+  
+  .nav-link:hover {
+    color: var(--accent-color);
+  }
+  .nav-link:focus {
+    color: var(--accent-color);
+  }
+  
+  .nav-tel {
+    color: var(--primary-text-color);
+  }
+  
+  /* Эффективные решения */
+  .banner-title {
+    color: var(--primary-white-color);
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background-color: #212121;
+  }
+  
+  .banner-button {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+  }
+  
+  .banner-button:hover {
+    color: var(--title-text-color);
+    background-color: var(--primary-white-color);
+  }
+  
+  .banner-button:focus {
+    color: var(--title-text-color);
+    background-color: var(--primary-white-color);
+  }
+  /* Преимущества */
+  .plus h3 {
+    color: var(--title-text-color);
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  /* Чем мы занимаемся */
+  .work-title {
+      color:var(--title-text-color);
+  }
+  
+  /* Секция Наша команда */
+  .people-title {
+      color:var(--title-text-color);
+  }
+  .people h3{
+      color:var(--title-text-color);
+  }
+  
+  /* Footer */
+  
+  .footer-logo {
+      color: var(--primary-white-color);
+  background-color: #212121;
+  }
+  
+  .footer-logo .logo {
+      color: var(--accent-color);
+  }
+  
+  .adr-map {
+      color:  var(--primary-white-color);
+  background-color: #212121;
+  }
+  
+  a {
+      color: var(--primary-text-color);
+  }
+  
+  /* 2 страница Портфолио*/
+  
+  .port-nav-link {
+  color: var(--title-text-color);
+  background-color: var(--primary-bg-color);
+  
+  }
+  
+  .port-nav-link:hover {
+      color:  var(--primary-white-color);
+  background-color:var(--accent-color)
+  }
+  
+  .port-nav-link:focus {
+      color:  var(--primary-white-color);
+  background-color:var(--accent-color)
+  }
+  
+  .port-page h3 {
+      color: var(--title-text-color);
+  }
