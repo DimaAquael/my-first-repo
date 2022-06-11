@@ -4,6 +4,9 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-bg-color: #f5f4fa;
+
+  --dark-background-color: #2f303a;
+  --grey-background-color: #f5f4fa;
 }
 
 /* Наши шрифты
@@ -16,20 +19,14 @@ body {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
 }
-ul {
+.list {
   list-style: none;
 }
-a {
+.link {
   text-decoration: none;
   color: var(--primary-text-color);
 }
 
-h2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-}
 /* Навигация */
 nav {
   color: var(--title-text-color);
@@ -61,9 +58,7 @@ nav {
   list-style: none;
 }
 
-.nav-link:hover {
-  color: var(--accent-color);
-}
+.nav-link:hover,
 .nav-link:focus {
   color: var(--accent-color);
 }
@@ -75,86 +70,103 @@ nav {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  font-style: normal;
 }
 
-.nav-tel:hover {
-  color: var(--accent-color);
-}
+.nav-tel:hover,
 .nav-tel:focus {
   color: var(--accent-color);
 }
 
 /* Эффективные решения */
-.banner-title {
+.hero {
+  background-color: var(--dark-background-color);
+  text-align: center;
+}
+
+.hero-title {
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  background-color: #212121;
 }
 
-.banner-button {
+.hero-button {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  text-align: center;
   letter-spacing: 0.06em;
+  font-family: inherit;
 }
 
-.banner-button:hover {
+.hero-button:hover,
+.hero-button:focus {
   color: var(--title-text-color);
   background-color: var(--primary-white-color);
 }
 
-.banner-button:focus {
-  color: var(--title-text-color);
-  background-color: var(--primary-white-color);
-}
 /* Преимущества */
-.plus h3 {
+.plus-subtitle {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
-.plus p {
+.plus-text {
   font-size: 14px;
   line-height: 1.7;
 }
 /* Чем мы занимаемся */
 .work-title {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
 
 /* Секция Наша команда */
+.people {
+  background-color: var(--grey-background-color);
+  text-align: center;
+}
+
+.people-item {
+  background-color: var(--primary-white-color);
+}
+
 .people-title {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
-.people h3 {
+.people-subtitle {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
 }
 
-.people p {
+.people-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
 }
 /* Footer */
+.footer {
+  background-color: var(--dark-background-color);
+}
 
 .footer-logo {
   color: var(--primary-white-color);
-  background-color: #212121;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -168,9 +180,9 @@ nav {
 
 .adr-map {
   color: var(--primary-white-color);
-  background-color: #212121;
   font-size: 14px;
   line-height: 1.7;
+  font-style: normal;
 }
 
 /* 2 страница Портфолио*/
@@ -186,17 +198,13 @@ nav {
   font-family: inherit;
 }
 
-.port-nav-link:hover {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
-}
-
+.port-nav-link:hover,
 .port-nav-link:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
 
-.port-page h3 {
+.port-page-subtitle {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
