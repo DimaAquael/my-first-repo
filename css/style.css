@@ -61,6 +61,7 @@ nav {
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-color);
+  cursor: pointer;
 }
 
 .nav-tel {
@@ -108,6 +109,7 @@ nav {
 .hero-button:focus {
   color: var(--title-text-color);
   background-color: var(--primary-white-color);
+  cursor: pointer;
 }
 
 /* Преимущества */
@@ -185,6 +187,12 @@ nav {
   font-style: normal;
 }
 
+.adr-map:hover,
+.adr-map:focus {
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
 /* 2 страница Портфолио*/
 
 .port-nav-link {
@@ -202,6 +210,7 @@ nav {
 .port-nav-link:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  cursor: pointer;
 }
 
 .port-page-subtitle {
