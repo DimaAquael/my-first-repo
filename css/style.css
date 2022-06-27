@@ -7,6 +7,10 @@
 
   --dark-background-color: #2f303a;
   --grey-background-color: #f5f4fa;
+
+  --primary-shadow: rgba(47, 48, 58, 0.4);
+
+  --border-color: #eeeeee;
 }
 
 /* Наши шрифты
@@ -57,13 +61,19 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 /* Навигация */
 .cont-header {
   display: flex;
   align-items: center;
+}
+
+.cont-header-portfolio {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
 }
 
 nav {
@@ -147,13 +157,14 @@ nav {
 
 /* Эффективные решения */
 .hero {
-  background-color: var(--dark-background-color);
   text-align: center;
 }
 
 .cont-size {
   padding-top: 200px;
   padding-bottom: 200px;
+  background-color: var(--dark-background-color);
+  background-image: linear-gradient(to right, var(--primary-shadow), var(--primary-shadow)), url(../images/banner.jpg);
 }
 
 .hero-title {
@@ -194,6 +205,35 @@ nav {
 }
 
 /* Преимущества */
+.plus-item::before {
+  content: " ";
+  display: block;
+  margin-bottom: 30px;
+  height: 120px;
+  background-color: var(--primary-bg-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px;
+}
+
+
+.plus-item:nth-child(1)::before {
+  background-image: url(../icon/antenna.svg);
+}
+
+
+.plus-item:nth-child(2)::before {
+  background-image: url(../icon/clock.svg);
+}
+
+.plus-item:nth-child(3)::before {
+  background-image: url(../icon/diagram.svg);
+}
+
+.plus-item:nth-child(4)::before {
+  background-image: url(../icon//astronaut.svg);
+}
+
 .plus-subtitle {
   color: var(--title-text-color);
   font-weight: 700;
@@ -301,6 +341,11 @@ nav {
   font-style: normal;
 }
 
+.adr-map:hover,
+.adr-map:focus {
+  color: var(--accent-color);
+}
+
 /* 2 страница Портфолио*/
 
 .cont-list {
@@ -314,6 +359,17 @@ nav {
 
   padding-top: 94px;
   padding-bottom: 50px;
+}
+
+.nav-icon {
+  display: inline-block;
+  width: 26px;
+  height: 22px;
+  margin-right: 10px;
+background-size: contain;
+/* background-position: center; */
+background-repeat: no-repeat;
+align-items: center;
 }
 
 .port-nav-link {
@@ -353,9 +409,13 @@ nav {
 }
 
 .port-page-item {
- /* flex-basis: calc((100% - 68px) / 3); */
- flex-basis: 370px;
- border: 1px solid #EEEEEE;
+  /* flex-basis: calc((100% - 68px) / 3); */
+  flex-basis: 370px;
+  border: 1px solid var(--border-color);
+}
+
+.port-page-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .port-page-item img {
