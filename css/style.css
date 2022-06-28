@@ -5,6 +5,8 @@
   --accent-color: #2196f3;
   --primary-bg-color: #f5f4fa;
 
+  --primary-icon-color: #afb1b8;
+
   --dark-background-color: #2f303a;
   --grey-background-color: #f5f4fa;
 
@@ -290,6 +292,53 @@ nav {
   margin-top: 50px;
 }
 
+.people-list-icon {
+  display: flex;
+  /* flex-basis: calc(100% / 4); */
+  margin-bottom: 30px;
+
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.people-item-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--primary-icon-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.people-item-icon:not(:last-child) {
+  margin-right: 10px;
+}
+
+.people-item-icon:hover,
+.people-item-icon:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+  cursor: pointer;
+}
+
+.people-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-items: center;
+}
+
+.people-icon:hover,
+.people-icon:focus {
+  color: var(--primary-white-color);
+}
+
 .people-subtitle {
   color: var(--title-text-color);
   font-weight: 500;
@@ -307,9 +356,111 @@ nav {
   margin-top: 10px;
   padding-bottom: 30px;
 }
+
+/* Секция Наши клиенты */
+.client-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+
+  padding-top: 94px;
+  margin-bottom: 50px;
+}
+
+.client-list {
+  display: flex;
+  gap: 30px;
+
+  padding: 0 0 94px 0;
+  margin: 0;
+  list-style: none;
+}
+
+.client-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 92px;
+  color: var(--primary-icon-color);
+
+  border: 1px solid var(--primary-icon-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.client-item:hover,
+.client-item:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.client-icon {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
+
 /* Footer */
 .footer {
   background-color: var(--dark-background-color);
+
+  display: flex;
+}
+
+.wrapper1 {
+  margin-right: 70px;
+}
+
+.footer-descr {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
+
+  padding-top: 60px;
+}
+
+.footer-list-icon {
+  display: flex;
+  gap: 10px;
+
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+
+.footer-item-icon {
+  width: 44px;
+  height: 44px;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: var(--primary-white-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.footer-item-icon:hover,
+.footer-item-icon:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-icon {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
 }
 
 .footer-logo {
@@ -349,6 +500,14 @@ nav {
   color: var(--accent-color);
 }
 
+.link-icon {
+  cursor: pointer;
+  text-decoration: none;
+  color: currentColor;
+
+  width: 20px;
+  height: 20px;
+}
 /* 2 страница Портфолио*/
 
 .cont-list {
