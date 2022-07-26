@@ -47,7 +47,40 @@
 
         <div class="backdrop is-hidden" data-modal>
    <div class="modal">
-      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit qui perferendis pariatur aliquam, dolores laboriosam odio quaerat impedit ullam sint, provident dolore odit nihil architecto eum animi adipisci aut ducimus?</p>
+      <p class="modal-text"> Оставьте свои данные, мы вам перезвоним</p>
+      <form class="modal-form">
+        <label class="modal-form-field">
+          <span class="modal-form-label">Имя</span>
+          <input type="text" class="modal-form-input">
+          <svg class="modal-form-icon"><use href="./icon/symbol-defs.svg#icon-person-black-18dp"></use></svg>
+        </label>
+
+        <label class="modal-form-field">
+          <span class="modal-form-label">Телефон</span>
+          <input type="tel" name="phone_number" class="modal-form-input">
+          <svg class="modal-form-icon"><use href="./icon/symbol-defs.svg#icon-phone-black-18dp"></use></svg>
+        </label>
+
+        <label class="modal-form-field">
+          <span class="modal-form-label">Почта</span>
+          <input type="email" name="email" class="modal-form-input">
+          <svg class="modal-form-icon"><use href="./icon/symbol-defs.svg#icon-email-black-18dp"></use></svg>
+        </label>
+
+        <label class="modal-form-field">
+          <span class="modal-form-label">Комментарий</span>
+           <textarea name="feedback" placeholder="Введите текст" class="modal-form-textarea"></textarea>
+        </label>
+
+        <label class="modal-form-field-check">
+          <input type="checkbox" name="agry" value="agry" class="modal-form-check">
+          <span class="modal-form-check-icon"></span>
+          <span class="modal-form-label-check">Соглашаюсь с рассылкой и принимаю <a href="http://" target="_blank" rel="noopener noreferrer"> Условия договора</a></span>
+        </label>
+
+        <button type="submit" class="modal-button-submit">Отправить</button>
+      </form>
+
       <button class="modal-button-close" aria-label="Закрыть окно" data-modal-close>
         <svg class="modal-icon-close"><use href="./icon/symbol-defs.svg#icon-close"></use></svg>
       </button>
@@ -338,6 +371,15 @@
             </li>
           </li>
         </ul>
+       </div>
+       <div class="wrapper3">
+        <form class="form-footer">
+          <label class="footer-label">
+            <span class="footer-label-name"> Подпишитесь на рассылку </span>
+            <input type="email" name="email" class="footer-input" placeholder="E-mail">
+          </label>
+          <button type="submit" class="footer-button">Подписаться</button>
+        </form>
        </div>
      </div>
     </footer>
