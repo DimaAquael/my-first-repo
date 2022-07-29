@@ -799,6 +799,7 @@ background: #188CE8;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: var(--dark-background-color);
+  
 }
 
 .footer-input:placeholder-shown {
@@ -807,10 +808,12 @@ background: #188CE8;
   padding-left: 16px;
 
   color: rgba(255, 255, 255, 0.6);
+  outline-color: var(--primary-white-color);
 }
 
 .footer-input:not(:placeholder-shown) {
   background-color: var(--primary-white-color);
+  outline: none;
 }
 
 .footer-button {
