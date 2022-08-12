@@ -9,28 +9,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css">
   </head>
   <body>
     <header>
      <div class="container cont-header">
-       <nav class="nav">
         <a href="./index.html" class="nav-logo link"><span class="logo">Web</span>Studio</a>
-        <ul class="nav-list">
-          <li class="nav-item"><a href="./index.html" class="nav-link current link">Студия</a></li>
-          <li class="nav-item"><a href="./portfolio.html" class="nav-link link is-hidden">Портфолио</a></li>
-          <li class="nav-item"><a href="#" class="nav-link link is-hidden">Контакты</a></li>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="./index.html" class="nav__link current link">Студия</a></li>
+          <li class="nav__item"><a href="./portfolio.html" class="nav__link link is-hidden">Портфолио</a></li>
+          <li class="nav__item"><a href="#" class="nav__link link is-hidden">Контакты</a></li>
         </ul>
       </nav>
       <ul class="header-list">
-        <li class="nav-item"><a href="mailto:info@devstudio.com" class="nav-tel link">
-          <svg class="nav-icon">
+        <li class="nav__item"><a href="mailto:info@devstudio.com" class="nav__tel link">
+          <svg class="nav__icon">
             <use href="./icon/symbol-defs.svg#icon-envelope"></use>
           </svg>
   
           info@devstudio.com</a></li>
-        <li class="nav-item"><a href="tel:+380961111111" class="nav-tel link">
-           <svg class="nav-icon">
+        <li class="nav__item"><a href="tel:+380961111111" class="nav__tel link">
+           <svg class="nav__icon">
             <use href="./icon/symbol-defs.svg#icon-smartphone"></use>
           </svg>
           +38 096 111 11 11</a></li>
@@ -42,40 +41,40 @@
       <section class="hero">
        <div class="container">
         <div class="cont-size">
-         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+         <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
         <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
 
         <div class="backdrop is-hidden" data-modal>
    <div class="modal">
-      <p class="modal-text"> Оставьте свои данные, мы вам перезвоним</p>
+      <p class="modal__text"> Оставьте свои данные, мы вам перезвоним</p>
       <form class="modal-form">
-        <label class="modal-form-field">
-          <span class="modal-form-label">Имя</span>
-          <input type="text" class="modal-form-input">
-          <svg class="modal-form-icon"><use href="./icon/symbol-defs.svg#icon-person-black-18dp"></use></svg>
+        <label class="modal-form__field">
+          <span class="modal-form__label">Имя</span>
+          <input type="text" class="modal-form__input">
+          <svg class="modal-form__icon"><use href="./icon/symbol-defs.svg#icon-person-black-18dp"></use></svg>
         </label>
 
-        <label class="modal-form-field">
-          <span class="modal-form-label">Телефон</span>
-          <input type="tel" name="phone_number" class="modal-form-input">
-          <svg class="modal-form-icon"><use href="./icon/symbol-defs.svg#icon-phone-black-18dp"></use></svg>
+        <label class="modal-form__field">
+          <span class="modal-form__label">Телефон</span>
+          <input type="tel" name="phone_number" class="modal-form__input">
+          <svg class="modal-form__icon"><use href="./icon/symbol-defs.svg#icon-phone-black-18dp"></use></svg>
         </label>
 
-        <label class="modal-form-field">
-          <span class="modal-form-label">Почта</span>
-          <input type="email" name="email" class="modal-form-input">
-          <svg class="modal-form-icon"><use href="./icon/symbol-defs.svg#icon-email-black-18dp"></use></svg>
+        <label class="modal-form__field">
+          <span class="modal-form__label">Почта</span>
+          <input type="email" name="email" class="modal-form__input">
+          <svg class="modal-form__icon"><use href="./icon/symbol-defs.svg#icon-email-black-18dp"></use></svg>
         </label>
 
-        <label class="modal-form-field">
-          <span class="modal-form-label">Комментарий</span>
-           <textarea name="feedback" placeholder="Введите текст" class="modal-form-textarea"></textarea>
+        <label class="modal-form__field">
+          <span class="modal-form__label">Комментарий</span>
+           <textarea name="feedback" placeholder="Введите текст" class="modal-form__textarea"></textarea>
         </label>
 
-        <label class="modal-form-field-check">
-          <input type="checkbox" name="agry" value="agry" class="modal-form-check">
-          <span class="modal-form-check-icon"></span>
-          <span class="modal-form-label-check">Соглашаюсь с рассылкой и принимаю <a href="http://" target="_blank" rel="noopener noreferrer"> Условия договора</a></span>
+        <label class="modal-form__field-check">
+          <input type="checkbox" name="agry" value="agry" class="modal-form__check">
+          <span class="modal-form__check-icon"></span>
+          <span class="modal-form__label-check">Соглашаюсь с рассылкой и принимаю <a href="http://" target="_blank" rel="noopener noreferrer"> Условия договора</a></span>
         </label>
 
         <button type="submit" class="modal-button-submit">Отправить</button>
@@ -92,23 +91,23 @@
       <!-- Преимущества -->
       <section class="plus">
         <div class="container">
-          <h2 hidden>Наши преимущества</h2>
+          <h2 class="visually-hidden">Наши преимущества</h2>
         <ul class="list">
-          <li class="plus-item">
-            <h3 class="plus-subtitle">Внимание к деталям</h3>
-            <p class="plus-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+          <li class="plus__item">
+            <h3 class="plus__subtitle">Внимание к деталям</h3>
+            <p class="plus__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
           </li>
-          <li class="plus-item">
-            <h3 class="plus-subtitle">Пунктуальноть</h3>
-            <p class="plus-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+          <li class="plus__item">
+            <h3 class="plus__subtitle">Пунктуальноть</h3>
+            <p class="plus__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
           </li>
-          <li class="plus-item">
-            <h3 class="plus-subtitle">Планирование</h3>
-            <p class="plus-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+          <li class="plus__item">
+            <h3 class="plus__subtitle">Планирование</h3>
+            <p class="plus__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
           </li>
-          <li class="plus-item">
-            <h3 class="plus-subtitle">Современные технологии</h3>
-            <p class="plus-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+          <li class="plus__item">
+            <h3 class="plus__subtitle">Современные технологии</h3>
+            <p class="plus__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
           </li>
         </ul>
         </div>
@@ -116,19 +115,19 @@
       <!-- Чем мы занимаемся -->
       <section class="work">
         <div class="container">
-          <h2 class="work-title">Чем мы занимаемся</h2>
-        <ul class="list work-list">
-          <li class="work-item">
+          <h2 class="work__title">Чем мы занимаемся</h2>
+        <ul class="list work__list">
+          <li class="work__item">
             <img src="./images/img.jpg" alt="Пишем код" width="370" />
-            <p class="work-desc">Десктопные приложения</p>
+            <p class="work__desc">Десктопные приложения</p>
           </li>
-          <li class="work-item">
+          <li class="work__item">
             <img src="./images/img_(1).jpg" alt="Разработка мобильных приложений" width="370" />
-            <p class="work-desc">Мобильные приложения</p>
+            <p class="work__desc">Мобильные приложения</p>
           </li>
-          <li class="work-item">
+          <li class="work__item">
             <img src="./images/img_(2).jpg" alt="Создание дизайна" width="370" />
-            <p class="work-desc">Дизайнерские решения</p>
+            <p class="work__desc">Дизайнерские решения</p>
           </li>
         </ul>
         </div>
@@ -136,7 +135,7 @@
       <!-- Секция Наша команда -->
       <section class="people">
         <div class="container">
-          <h2 class="people-title">Наша команда</h2>
+          <h2 class="people__title">Наша команда</h2>
         <ul class="people-list list">
           <li class="people-item">
             <img src="./images/img_(3).jpg" alt="Product Designer Игорь Демьяненко" width="270" />
@@ -289,35 +288,35 @@
       <!-- Секция Наши клиенты -->
       <section class="client">
         <div class="container">
-          <h2 class="client-title">Постоянные клиенты</h2>
-          <ul class="client-list">
-            <li class="client-item">
-               <svg class="client-icon">
+          <h2 class="client__title">Постоянные клиенты</h2>
+          <ul class="client__list">
+            <li class="client__item">
+               <svg class="client__icon">
                 <use href="./icon/symbol-defs.svg#icon-company1"></use>
               </svg>
             </li>
-            <li class="client-item">
-               <svg class="client-icon">
+            <li class="client__item">
+               <svg class="client__icon">
                 <use href="./icon/symbol-defs.svg#icon-company2"></use>
               </svg>
             </li>
-            <li class="client-item">
-               <svg class="client-icon">
+            <li class="client__item">
+               <svg class="client__icon">
                 <use href="./icon/symbol-defs.svg#icon-company3"></use>
               </svg>
             </li>
-            <li class="client-item">
-               <svg class="client-icon">
+            <li class="client__item">
+               <svg class="client__icon">
                 <use href="./icon/symbol-defs.svg#icon-company4"></use>
               </svg>
             </li>
-            <li class="client-item">
-               <svg class="client-icon">
+            <li class="client__item">
+               <svg class="client__icon">
                 <use href="./icon/symbol-defs.svg#icon-company5"></use>
               </svg>
             </li>
-            <li class="client-item">
-               <svg class="client-icon">
+            <li class="client__item">
+               <svg class="client__icon">
                 <use href="./icon/symbol-defs.svg#icon-company6"></use>
               </svg>
             </li>
@@ -331,15 +330,15 @@
       <div class="wrapper1">
         <a href="./index.html" class="footer-logo link"><span class="logo">Web</span>Studio</a>
       <address class="adr">
-        <ul class="adr-list">
-          <li class="adr-item"><a href="https://goo.gl/maps/qrtd7Mqz3KBHwFx2A" target="_blank" rel="noopener noreferrer" class="adr-map link">г. Киев, пр-т Леси Украинки, 26</a></li>
-          <li class="adr-item"><a href="mailto:info@example.com" class="nav-tel link">info@example.com</a></li>
-          <li class="adr-item"><a href="tel:+380991111111" class="nav-tel link">+38 099 111 11 11</a></li>
+        <ul class="adr__list">
+          <li class="adr__item"><a href="https://goo.gl/maps/qrtd7Mqz3KBHwFx2A" target="_blank" rel="noopener noreferrer" class="adr__map link">г. Киев, пр-т Леси Украинки, 26</a></li>
+          <li class="adr__item"><a href="mailto:info@example.com" class="nav__tel link">info@example.com</a></li>
+          <li class="adr__item"><a href="tel:+380991111111" class="nav__tel link">+38 099 111 11 11</a></li>
         </ul>
       </address>
       </div>
        <div class="wrapper2">
-        <p class="footer-descr">Присоединяйтесь</p>
+        <p class="footer__descr">Присоединяйтесь</p>
          <ul class="footer-list-icon">
               <li class="footer-item-icon">
                 <a href="http://" target="_blank" rel="noopener noreferrer" class="link-icon">

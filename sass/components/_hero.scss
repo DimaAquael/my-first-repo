@@ -1,0 +1,48 @@
+/* Эффективные решения */
+.hero {
+  text-align: center;
+}
+
+.cont-size {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: var(--dark-background-color);
+  background-image: linear-gradient(to right, var(--primary-shadow), var(--primary-shadow)), url(../images/banner.jpg);
+}
+
+.hero__title {
+  color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  padding-bottom: 30px;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  font-family: inherit;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
+
+  padding: 10px 32px;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  color: var(--title-text-color);
+  background-color: var(--primary-white-color);
+  cursor: pointer;
+}
