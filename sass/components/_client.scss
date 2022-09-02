@@ -8,10 +8,17 @@
 
   padding-top: 94px;
   margin-bottom: 50px;
+
+   @media screen and (max-width:1200px) {
+  font-size: 28px;
+  }
 }
 
 .client__list {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 30px;
 
   padding: 0 0 94px 0;

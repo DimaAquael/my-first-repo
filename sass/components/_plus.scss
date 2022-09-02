@@ -1,4 +1,14 @@
 /* Преимущества */
+.plus__item {
+  @media screen and (min-width:768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width:1200px) {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}
+
+
 .plus__item::before {
   content: " ";
   display: block;
@@ -34,6 +44,10 @@
   text-transform: uppercase;
 
   padding-bottom: 10px;
+
+  @media screen and (max-width:767px) {
+    text-align: center;
+  }
 }
 .plus__text {
   font-size: 14px;
