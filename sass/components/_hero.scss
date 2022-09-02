@@ -1,0 +1,86 @@
+/* Эффективные решения */
+.hero {
+  text-align: center;
+}
+
+.hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-color: var(--dark-background-color);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 767px) {
+    max-width: 480px;
+    height: 400px;
+    background-image: linear-gradient(to right, var(--primary-shadow), var(--primary-shadow)), url(/images/hero/hero-480.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, var(--primary-shadow), var(--primary-shadow)), url(/images/hero/hero-480@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 768px;
+    height: 400px;
+    background-image: linear-gradient(to right, var(--primary-shadow), var(--primary-shadow)), url(/images/hero/hero-768.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, var(--primary-shadow), var(--primary-shadow)), url(/images/hero/hero-768@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(to right, var(--primary-shadow), var(--primary-shadow)), url(/images/hero/hero-1200.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, var(--primary-shadow), var(--primary-shadow)), url(/images/hero/hero-1200@2x.jpg);
+    }
+  }
+}
+
+.hero__title {
+  color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  padding-bottom: 30px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.62;
+  }
+}
+
+.hero-button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  font-family: inherit;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
+
+  padding: 10px 32px;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  color: var(--title-text-color);
+  background-color: var(--primary-white-color);
+  cursor: pointer;
+}

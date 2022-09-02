@@ -1,0 +1,55 @@
+/* Преимущества */
+.plus__item {
+  @media screen and (min-width:768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width:1200px) {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}
+
+
+.plus__item::before {
+  content: " ";
+  display: block;
+  margin-bottom: 30px;
+  height: 120px;
+  background-color: var(--primary-bg-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px;
+}
+
+.plus__item:nth-child(1)::before {
+  background-image: url(../icon/antenna.svg);
+}
+
+.plus__item:nth-child(2)::before {
+  background-image: url(../icon/clock.svg);
+}
+
+.plus__item:nth-child(3)::before {
+  background-image: url(../icon/diagram.svg);
+}
+
+.plus__item:nth-child(4)::before {
+  background-image: url(../icon//astronaut.svg);
+}
+
+.plus__subtitle {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  padding-bottom: 10px;
+
+  @media screen and (max-width:767px) {
+    text-align: center;
+  }
+}
+.plus__text {
+  font-size: 14px;
+  line-height: 1.7;
+}

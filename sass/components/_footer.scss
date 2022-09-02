@@ -1,0 +1,232 @@
+/* Footer */
+.footer {
+  text-align: center;
+  background-color: var(--dark-background-color);
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
+}
+
+.wrapper1 {
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
+}
+
+.wrapper2 {
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+}
+
+.footer__descr {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
+}
+
+.footer-list-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+
+.footer-item-icon {
+  width: 44px;
+  height: 44px;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: var(--primary-white-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.footer-item-icon:hover,
+.footer-item-icon:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-icon {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
+
+.footer-logo {
+  color: var(--primary-white-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+
+  padding-top: 60px;
+  display: inline-block;
+}
+
+.footer-logo .logo {
+  color: var(--accent-color);
+}
+
+.adr {
+  margin-top: 20px;
+  padding-bottom: 60px;
+
+  &__item {
+    text-align: inherit;
+  }
+}
+
+.adr__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.adr__map {
+  color: var(--primary-white-color);
+  font-size: 14px;
+  line-height: 1.7;
+  font-style: normal;
+}
+
+.adr__map:hover,
+.adr__map:focus {
+  color: var(--accent-color);
+}
+
+.link-icon {
+  cursor: pointer;
+  text-decoration: none;
+  color: currentColor;
+
+  width: 20px;
+  height: 20px;
+}
+
+// wrappaer3
+
+.form-footer {
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.footer-label {
+  width: 100%;
+}
+
+.footer-label-name {
+  display: block;
+
+  margin-bottom: 20px;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
+}
+
+.footer-input {
+  // width: 358px;
+  height: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--dark-background-color);
+
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 358px;
+    margin-right: 12px;
+  }
+}
+
+.footer-input:placeholder-shown {
+  font-size: 16px;
+  line-height: 1.25;
+  padding-left: 16px;
+
+  color: rgba(255, 255, 255, 0.6);
+  outline-color: var(--primary-white-color);
+}
+
+.footer-input:not(:placeholder-shown) {
+  background-color: var(--primary-white-color);
+  outline: none;
+}
+
+.footer-button {
+  // display: inline-block;
+  width: 200px;
+  height: 50px;
+
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--primary-white-color);
+  border-color: transparent;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+}
+
+.footer-button:hover,
+.footer-button:focus {
+  /* color: var(--title-text-color);
+  background-color: var(--primary-white-color); */
+  cursor: pointer;
+}
+
+.footer-button::after {
+  content: " ";
+
+  width: 24px;
+  height: 24px;
+  background-image: url(../icon/icon-send.svg);
+
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+}

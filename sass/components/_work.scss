@@ -1,0 +1,46 @@
+/* Чем мы занимаемся */
+.work {
+  display: none;
+  @media screen and (min-width:1200px) {
+    display: block;
+  }
+}
+
+.work__title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+
+  @media screen and (max-width:1200px) {
+  font-size: 28px;
+  }
+}
+
+.work__list {
+  padding-top: 50px;
+}
+
+.work__item {
+  position: relative;
+}
+
+.work__desc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  background-color: var(--text-background-color);
+}
